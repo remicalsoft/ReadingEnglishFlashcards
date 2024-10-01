@@ -17,9 +17,11 @@ class MainActivity : ComponentActivity() {
                 tts.language = Locale.US
             }
         }
+        tts.setSpeechRate(0.7.toFloat())
+        tts.setPitch(1.0.toFloat())
         setContent {
             MyApp {
-                MainScreen(tts = tts)
+                MainScreen(applicationContext, tts = tts)
             }
         }
     }

@@ -11,8 +11,8 @@ android {
         applicationId = "net.dixq.readingflashcard.android"
         minSdk = 29
         targetSdk = 34
-        versionCode = 2
-        versionName = "1.1"
+        versionCode = 5
+        versionName = "1.4.0"
     }
     buildFeatures {
         compose = true
@@ -37,13 +37,15 @@ android {
 }
 
 dependencies {
-    implementation("androidx.navigation:navigation-compose:2.8.1")
+    implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.ui.tooling.preview.v170)
     implementation(projects.shared)
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.datastore.preferences.v100)
     debugImplementation(libs.compose.ui.tooling)
     debugImplementation(libs.androidx.ui.tooling.v170)
 }
