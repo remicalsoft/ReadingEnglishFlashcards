@@ -19,7 +19,6 @@ import net.dixq.readingflashcard.android.Data
 
 @Composable
 fun MenuScreen(onItemSelected: (Int, Int) -> Unit) {
-
     val titles = Data.getTitles()
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -27,7 +26,6 @@ fun MenuScreen(onItemSelected: (Int, Int) -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Spacer(modifier = Modifier.weight(1f))
-
         LazyColumn(
             modifier = Modifier.padding(16.dp)
         ) {
@@ -41,10 +39,7 @@ fun MenuScreen(onItemSelected: (Int, Int) -> Unit) {
                 Spacer(modifier = Modifier.height(16.dp)) // ボタン間の隙間を設定
             }
         }
-
-
         Spacer(modifier = Modifier.weight(1f))
-
         Button(
             onClick = { onItemSelected(SceneId.Record.ordinal, -1) },
         ) {
