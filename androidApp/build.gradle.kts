@@ -11,8 +11,8 @@ android {
         applicationId = "net.dixq.readingflashcard.android"
         minSdk = 29
         targetSdk = 34
-        versionCode = 6
-        versionName = "1.4.1"
+        versionCode = 11
+        versionName = "1.7.0"
     }
     buildFeatures {
         compose = true
